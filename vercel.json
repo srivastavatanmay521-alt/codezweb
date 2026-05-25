@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "installCommand": "corepack enable pnpm && pnpm install --no-frozen-lockfile",
+  "installCommand": "npm install -g pnpm@9.15.4 && pnpm install --no-frozen-lockfile",
   "buildCommand": "pnpm --filter @workspace/codez run build",
-  "outputDirectory": "artifacts/codez/dist/public",
+  "outputDirectory": "frontend/dist/public",
   "rewrites": [
     { "source": "/api/:path*", "destination": "/api/index" }
   ],
