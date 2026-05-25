@@ -6,8 +6,8 @@ minimumReleaseAgeExclude:
 
 packages:
   - frontend
-  - lib/*
-
+  - packages/*
+  - apps/*
 
 catalog:
   '@replit/vite-plugin-cartographer': ^0.5.1
