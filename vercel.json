@@ -1,7 +1,6 @@
 {
   "version": 2,
-  "installCommand": "npm install -g pnpm@9.15.4 && pnpm install --no-frozen-lockfile --filter @workspace/codez...",
-  "buildCommand": "pnpm --filter @workspace/codez run build",
+  "buildCommand": "pnpm install --no-frozen-lockfile && pnpm --filter @workspace/codez run build",
   "outputDirectory": "frontend/dist/public",
   "rewrites": [
     { "source": "/api/:path*", "destination": "/api/index" }
