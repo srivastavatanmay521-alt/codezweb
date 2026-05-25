@@ -1,13 +1,13 @@
 {
- "version": 2,
- "installCommand": "npm install -g pnpm && pnpm install",
- "buildCommand": "pnpm --filter @workspace/codez run build",
- "outputDirectory": "artifacts/codez/dist/public",
- "rewrites": [
-   { "source": "/api/:path*", "destination": "/api/index" }
- ],
- "env": {
-   "BASE_PATH": "/",
-   "NODE_ENV": "production"
- }
+  "version": 2,
+  "installCommand": "corepack enable && corepack prepare pnpm@9.15.4 --activate && pnpm install",
+  "buildCommand": "pnpm --filter @workspace/codez run build",
+  "outputDirectory": "artifacts/codez/dist/public",
+  "rewrites": [
+    { "source": "/api/:path*", "destination": "/api/index" }
+  ],
+  "env": {
+    "BASE_PATH": "/",
+    "NODE_ENV": "production"
+  }
 }
